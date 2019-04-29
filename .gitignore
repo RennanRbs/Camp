@@ -1,0 +1,10 @@
+### General macOS files ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+### User setting Xcode files ###
+xcuserdata/
+
+### CocoaPods Modules ###
+Pods/
