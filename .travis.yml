@@ -1,5 +1,5 @@
 language: objective-c
 osx_image: xcode10.2
-xcode_project: ci-tests.xcodeproj
-xcode_scheme: ci-testsTests
+xcode_project: Camp.xcodeproj
+xcode_scheme: CampTests
 xcode_destination: platform=iOS Simulator,OS=12.2,name=iPhone 8
