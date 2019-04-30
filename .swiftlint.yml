@@ -1,0 +1,49 @@
+disabled_rules: # rule identifiers to exclude from running
+- control_statement
+- force_try
+- trailing_whitespace
+- valid_docs
+- variable_name
+- variable_name_min_length
+#  - variable_name_max_length
+excluded: # paths to ignore during linting. overridden by `included`.
+- Carthage
+- Pods
+- fastlane
+- XLProjectName/Helpers/R-Swift/R.generated.swift
+# parameterized rules can be customized from this configuration file
+file_length:
+- 700
+- 1000
+line_length:
+- 230
+- 550
+# parameterized rules are first parameterized as a warning level, then error level.
+function_body_length:
+- 150 # warning
+- 200 # error
+type_body_length:
+- 300 # warning
+- 400 # error
+variable_name_max_length:
+- 30 # warning
+- 40 # error
+variable_name_min_length:
+- 2 # warning
+- 1 # error
+custom_rules:
+    always_use_parentheses: # regra de identificacao
+        included: ".*\\.swift" # Quais arquivos sevem ser verificados optional.
+        excluded: ".*Test\\.swift" # Quais arquivos não devem ser verificados optional
+        name: "Lack of use of parentheses" # rule name. optional.
+        regex: "if\\s([a-z]|[A-Z])" # matching pattern. Qual a regra regex que deve ser utilizada para pesquisa
+        match_kinds: # SyntaxKinds to match. optional.Variavel utilizada para definir campo de buscas, como por exemplo comentarios ou indentificadores
+        - identifier #Busca por identificadores
+        - keyword # Busca por palavras reservadas
+
+        message: "Error de sintese definida pela equipe. Faz-se necessario o uso de () após expressões para uma melhor compreensão e legibilidade do código" # violation message. optional.
+        severity: error # violation severity. optional.
+
+
+
+
