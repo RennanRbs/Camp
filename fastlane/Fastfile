@@ -16,11 +16,14 @@
 default_platform(:ios)
 
 platform :ios do
+  setup_travis
+
   desc "Execute tests"
   lane :tests do
     begin
       build_n_test()
       slack_success_msg()    
+      
     rescue => exception
       slack_error_msg(exception)
     end
@@ -28,7 +31,8 @@ platform :ios do
 end
 
 def build_n_test
-  scan(scheme: "Camp", configuration: "Debug")
+  gym(scheme: "Camp")
+  scan(scheme: "Camp", configuration: "Debug")  
 end
 
 def slack_success_msg
