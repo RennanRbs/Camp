@@ -25,7 +25,10 @@ end
 
 def build_n_test
   scan(scheme: "Camp", configuration: "Debug")
-  gym(scheme: "Camp")
+  gym(
+    scheme: "Camp",
+    export_xcargs: "-allowProvisioningUpdates"
+  )
   slack_success_msg
 end
 
@@ -35,6 +38,27 @@ def slack_success_msg
     success: true,
     slack_url: "https://hooks.slack.com/services/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",     
     default_payloads: [:git_branch, :git_author, :last_git_commit_message]
+  )
+end
+
+lane :dev do
+  cert(
+    development: true,
+    output_path: "keys/iOS/Development/"
+  )
+
+  register_devices(
+    devices: {
+      "iPhone Bruno" => "6cd8df5fd83f641340e1e07a536d6ed1725d54f1"
+    }
+  )
+
+  sigh(
+    development: true,
+    output_path: "keys/iOS/Development",
+    cert_id: "GLFLKQVLJ9",
+    provisioning_name: "Camp Profile",
+    filename: "DevelopmentProvisioningProfile.mobileprovision"    
   )
 end
 

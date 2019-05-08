@@ -1,0 +1,2 @@
+Device ID   Device Name
+6cd8df5fd83f641340e1e07a536d6ed1725d54f1    iosda-br-iPhone-DV6RR0WYG5MG
