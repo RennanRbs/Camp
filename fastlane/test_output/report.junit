@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testsuites name='CampUITests.xctest' tests='3' failures='0'>
   <testsuite name='CampTests.CampTests' tests='2' failures='0'>
-    <testcase classname='CampTests.CampTests' name='testExample' time='0.003'/>
-    <testcase classname='CampTests.CampTests' name='testPerformanceExample' time='0.397'/>
+    <testcase classname='CampTests.CampTests' name='testExample' time='0.004'/>
+    <testcase classname='CampTests.CampTests' name='testPerformanceExample' time='0.366'/>
   </testsuite>
   <testsuite name='CampUITests.CampUITests' tests='1' failures='0'>
-    <testcase classname='CampUITests.CampUITests' name='testExample' time='4.316'/>
+    <testcase classname='CampUITests.CampUITests' name='testExample' time='4.511'/>
   </testsuite>
 </testsuites>
