@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A3999D732284521B0024FFC7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3999D722284521B0024FFC7 /* MapViewController.swift */; };
+		A3999D75228458F50024FFC7 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3999D74228458F50024FFC7 /* DetailsViewController.swift */; };
+		A3999D772284599E0024FFC7 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3999D762284599E0024FFC7 /* ReportViewController.swift */; };
+		A3999D79228459DE0024FFC7 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3999D78228459DE0024FFC7 /* RatingViewController.swift */; };
 		E8B8D08E22772F2600E3DA59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B8D08D22772F2600E3DA59 /* AppDelegate.swift */; };
 		E8B8D09522772F2800E3DA59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8B8D09422772F2800E3DA59 /* Assets.xcassets */; };
 		E8B8D09822772F2800E3DA59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8B8D09622772F2800E3DA59 /* LaunchScreen.storyboard */; };
@@ -34,6 +37,9 @@
 
 /* Begin PBXFileReference section */
 		A3999D722284521B0024FFC7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A3999D74228458F50024FFC7 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		A3999D762284599E0024FFC7 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		A3999D78228459DE0024FFC7 /* RatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
 		E8B8D08A22772F2600E3DA59 /* Camp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Camp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8B8D08D22772F2600E3DA59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8B8D09422772F2800E3DA59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,6 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				A3999D722284521B0024FFC7 /* MapViewController.swift */,
+				A3999D74228458F50024FFC7 /* DetailsViewController.swift */,
+				A3999D762284599E0024FFC7 /* ReportViewController.swift */,
+				A3999D78228459DE0024FFC7 /* RatingViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -362,8 +371,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3999D772284599E0024FFC7 /* ReportViewController.swift in Sources */,
+				A3999D79228459DE0024FFC7 /* RatingViewController.swift in Sources */,
 				A3999D732284521B0024FFC7 /* MapViewController.swift in Sources */,
 				E8B8D08E22772F2600E3DA59 /* AppDelegate.swift in Sources */,
+				A3999D75228458F50024FFC7 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
