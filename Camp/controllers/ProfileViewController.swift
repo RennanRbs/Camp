@@ -1,5 +1,5 @@
 //
-//  ReportViewController.swift
+//  ProfileViewController.swift
 //  Camp
 //
 //  Created by Bruno Rocha on 09/05/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ReportViewController: UIViewController {
+class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
