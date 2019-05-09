@@ -12,9 +12,17 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    /// The base Navigation Controller, its rootViewController is a MapViewController
+    lazy var rootNavigationController: UINavigationController = {
+        let mapViewController = MapViewController()
+        return UINavigationController(rootViewController: mapViewController)
+    }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = self.rootNavigationController
+        self.window?.makeKeyAndVisible()
         return true
     }
 
