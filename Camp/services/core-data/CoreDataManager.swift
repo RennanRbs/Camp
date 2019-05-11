@@ -21,14 +21,19 @@ class CoreDataManager {
         return container
     }()
     
-    static func saveContext () throws {
-        let context = persistentContainer.viewContext
+    static func saveContext () {
+        let context = self.context
         if (context.hasChanges) {
             do {
                 try context.save()
             } catch {
-                throw error as NSError
+                let error = error as NSError
+                print("Save context error \(error).\n\(error.userInfo)")
             }
         }
+    }
+    
+    static var context: NSManagedObjectContext {
+        return self.persistentContainer.viewContext
     }
 }

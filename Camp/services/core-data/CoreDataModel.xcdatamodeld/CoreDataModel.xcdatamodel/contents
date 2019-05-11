@@ -20,6 +20,7 @@
     </entity>
     <entity name="Place" representedClassName="Place" syncable="YES" codeGenerationType="class">
         <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="coverImage" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="informations" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
@@ -36,10 +37,10 @@
         <relationship name="resourcePlace" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Place" inverseName="placeResource" inverseEntity="Place" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Place" positionX="-303.84375" positionY="-48.2890625" width="128" height="208"/>
+        <element name="Place" positionX="-303.84375" positionY="-48.2890625" width="128" height="223"/>
         <element name="Address" positionX="-54" positionY="54" width="128" height="133"/>
         <element name="Resource" positionX="-530.046875" positionY="39.34375" width="128" height="75"/>
-        <element name="Photo" positionX="-286.12109375" positionY="297.65625" width="128" height="75"/>
+        <element name="Photo" positionX="-286.12109375" positionY="297.65625" width="128" height="73"/>
         <element name="NearbyPlace" positionX="-252" positionY="198" width="128" height="60"/>
         <element name="Category" positionX="-243" positionY="207" width="128" height="60"/>
     </elements>
