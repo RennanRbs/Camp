@@ -9,9 +9,15 @@
 import Foundation
 import CoreData
 
+/// A helper class to deal with app Core Data containera and contexta
 class CoreDataManager {
     
-    static var persistentContainer: NSPersistentContainer = {
+    /// CoreDataManager singleton instance
+    static let shared = CoreDataManager()
+    
+    private init() {}
+    
+    lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "CoreDataModel")
         container.loadPersistentStores(completionHandler: { ( _, error) in
             if let error = error as NSError? {
@@ -21,19 +27,18 @@ class CoreDataManager {
         return container
     }()
     
-    static func saveContext () {
+    func saveContext() throws {
         let context = self.context
         if (context.hasChanges) {
             do {
                 try context.save()
             } catch {
-                let error = error as NSError
-                print("Save context error \(error).\n\(error.userInfo)")
+                throw error
             }
         }
     }
     
-    static var context: NSManagedObjectContext {
+    var context: NSManagedObjectContext {
         return self.persistentContainer.viewContext
     }
 }

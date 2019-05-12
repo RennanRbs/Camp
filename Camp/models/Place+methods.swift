@@ -10,21 +10,19 @@ import UIKit
 import CoreData
 
 extension Place {
-    var imageCover: UIImage {
+    var imageCover: UIImage? {
         set(value) {
-            self.coverImage = self.imageToData(image: value)
+            if let image = value {
+                self.coverImage = image.jpegData(compressionQuality: 1.0)
+            }
         }
         
         get {
-            return dataToImage(data: self.coverImage)
+            if let data = self.coverImage {
+                return UIImage(data: data)
+            }
+            
+            return nil
         }
     }
-    
-    func dataToImage(data: Data?) -> UIImage {
-        return UIImage()
-    }
-    
-    func imageToData(image: UIImage) -> Data {
-        return Data()
-    }        
 }

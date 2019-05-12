@@ -16,7 +16,7 @@ extension NSManagedObject {
     /// - Parameter predicate: the query predicate
     /// - Returns: an array with results of the predicate query
     static func query(predicate: NSPredicate? = nil) -> [NSManagedObject] {
-        let context = CoreDataManager.persistentContainer.viewContext
+        let context = CoreDataManager.shared.persistentContainer.viewContext
         let request = NSFetchRequest<NSFetchRequestResult>()
         
         request.entity = self.entity()
@@ -45,7 +45,7 @@ extension NSManagedObject {
     
     /// Delete all register of an entity
     static func deleteAll() {
-        let context = CoreDataManager.context
+        let context = CoreDataManager.shared.context
         
         if let entityName = self.entity().name {
             let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
@@ -56,7 +56,13 @@ extension NSManagedObject {
                 for result in results {
                     if let resultAsManagedObject = result as? NSManagedObject {
                         context.delete(resultAsManagedObject)
-                        CoreDataManager.saveContext()
+                        do {
+                            try CoreDataManager.shared.saveContext()
+                        }
+                        catch {
+//                        It's just printint the error, but it should be better handled
+                            print(error)
+                        }
                     }
                 }
             }
