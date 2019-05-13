@@ -2,7 +2,7 @@
 //  DetailsViewController.swift
 //  Camp
 //
-//  Created by Bruno Rocha on 09/05/19.
+//  Created by Cibele Paulino on 13/05/19.
 //  Copyright © 2019 Rennan Rebouças. All rights reserved.
 //
 
@@ -13,17 +13,22 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-    
-    /*
-    // MARK: - Navigation
+        view.backgroundColor = UIColor.blue
+        
+        let rect = CGRect(x: 0.0, y: 100.0, width: 414.0, height: 84.0)
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        
 
+        let viewExample = HeaderDetails.init(frame: rect)
+        
+//        viewExample.translatesAutoresizingMaskIntoConstraints = false
+        
+        
+        viewExample.lblName.text = "Teste"
+        viewExample.lblRating.text = "2.3"
+        viewExample.lblDistance.text = "1.8 Km"
+        viewExample.lblOperation.text = "Funcionando"
+        
+        view.addSubview(viewExample)
+    }
 }
