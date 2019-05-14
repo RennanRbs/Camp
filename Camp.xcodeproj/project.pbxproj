@@ -102,13 +102,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4DE44DAF22899105009FF883 /* base-components */ = {
+		4D850AD9228B243C00A22965 /* details-components */ = {
 			isa = PBXGroup;
 			children = (
 				4DE44DBC22899241009FF883 /* HeaderDetails.swift */,
 				4DE44DC9228AE56E009FF883 /* HeaderDetails+Constraints.swift */,
 				4DE44DCB228AE5F9009FF883 /* GeneralBoxDetails.swift */,
 				4D850AD7228B22B200A22965 /* GeneralBoxDetails+Constraints.swift */,
+			);
+			path = "details-components";
+			sourceTree = "<group>";
+		};
+		4DE44DAF22899105009FF883 /* base-components */ = {
+			isa = PBXGroup;
+			children = (
+				4D850AD9228B243C00A22965 /* details-components */,
 			);
 			path = "base-components";
 			sourceTree = "<group>";
