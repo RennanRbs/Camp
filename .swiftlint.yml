@@ -5,6 +5,7 @@ disabled_rules: # rule identifiers to exclude from running
 - valid_docs
 - variable_name
 - variable_name_min_length
+- statement_position
 #  - variable_name_max_length
 excluded: # paths to ignore during linting. overridden by `included`.
 - Carthage
@@ -36,7 +37,7 @@ custom_rules:
         included: ".*\\.swift" # Quais arquivos sevem ser verificados optional.
         excluded: ".*Test\\.swift" # Quais arquivos não devem ser verificados optional
         name: "Lack of use of parentheses" # rule name. optional.
-        regex: "if\\s([a-z]|[A-Z])" # matching pattern. Qual a regra regex que deve ser utilizada para pesquisa
+        regex: "if\\s((?!let))([a-z]|[A-Z])" # matching pattern. Qual a regra regex que deve ser utilizada para pesquisa
         match_kinds: # SyntaxKinds to match. optional.Variavel utilizada para definir campo de buscas, como por exemplo comentarios ou indentificadores
         - identifier #Busca por identificadores
         - keyword # Busca por palavras reservadas
