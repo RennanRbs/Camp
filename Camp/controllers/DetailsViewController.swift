@@ -14,21 +14,21 @@ class DetailsViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = UIColor.blue
+        let viewExample = HeaderDetails()
         
-        let rect = CGRect(x: 0.0, y: 100.0, width: 414.0, height: 84.0)
-
+        view.addSubview(viewExample)
         
-
-        let viewExample = HeaderDetails.init(frame: rect)
+        viewExample.translatesAutoresizingMaskIntoConstraints = false
         
-//        viewExample.translatesAutoresizingMaskIntoConstraints = false
-        
+        viewExample.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: 0).isActive = true
+        viewExample.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 0).isActive = true
+        viewExample.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 100).isActive = true
+        viewExample.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -400).isActive = true
         
         viewExample.lblName.text = "Teste"
         viewExample.lblRating.text = "2.3"
         viewExample.lblDistance.text = "1.8 Km"
         viewExample.lblOperation.text = "Funcionando"
         
-        view.addSubview(viewExample)
     }
 }

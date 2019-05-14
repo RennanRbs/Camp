@@ -15,6 +15,7 @@ class FormattingCenter {
         parameter.text = text
         parameter.textAlignment = .left
         parameter.textColor = UIColor.init(named: "White")
+        parameter.translatesAutoresizingMaskIntoConstraints = false
     }
 
     func mainTitleGreenLeft(parameter: UILabel, text: String) {
@@ -22,6 +23,7 @@ class FormattingCenter {
         parameter.text = text
         parameter.textAlignment = .left
         parameter.textColor = UIColor.init(named: "Green")
+        parameter.translatesAutoresizingMaskIntoConstraints = false
     }
     
     func secTitleLightLeft(parameter: UILabel, text: String) {
@@ -29,6 +31,7 @@ class FormattingCenter {
         parameter.text = text
         parameter.textAlignment = .left
         parameter.textColor = UIColor.init(named: "White")
+        parameter.translatesAutoresizingMaskIntoConstraints = false
     }
     
     func secTitleLightCenter(parameter: UILabel, text: String) {
@@ -36,5 +39,6 @@ class FormattingCenter {
         parameter.text = text
         parameter.textAlignment = .center
         parameter.textColor = UIColor.init(named: "White")
+        parameter.translatesAutoresizingMaskIntoConstraints = false
     }
 }
