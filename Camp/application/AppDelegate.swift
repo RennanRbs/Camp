@@ -15,7 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     /// The base Navigation Controller, its rootViewController is a MapViewController
     lazy var rootNavigationController: UINavigationController = {
-        let mapViewController = ProfileViewController()
+
+        let mapViewController = DetailsViewController()
         return UINavigationController(rootViewController: mapViewController)
     }()
 
@@ -45,7 +46,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        do {
+            try CoreDataManager.shared.saveContext()
+        }
+        catch {
+//            It's just printint the error, but it should be better handled
+            print(error)
+        }
     }
 
 }
