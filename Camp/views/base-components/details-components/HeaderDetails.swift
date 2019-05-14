@@ -12,19 +12,19 @@ class HeaderDetails: UIView {
 
     var lblName: UILabel! = {
        let label = UILabel()
-        FormattingCenter().mainTitleLightLeft(parameter: label, text: label.text ?? "")
+        FormattingCenter().titleWhiteLeft(parameter: label, text: label.text ?? "")
         return label
     }()
     
     var lblOperation: UILabel! = {
         let label = UILabel()
-        FormattingCenter().mainTitleGreenLeft(parameter: label, text: label.text ?? "")
+        FormattingCenter().subTitleGreenLeft(parameter: label, text: label.text ?? "")
         return label
     }()
     
     var lblDistance: UILabel! = {
         let label = UILabel()
-        FormattingCenter().secTitleLightLeft(parameter: label, text: label.text ?? "")
+        FormattingCenter().subTitleWhiteLeft(parameter: label, text: label.text ?? "")
         return label
     }()
     
@@ -37,7 +37,7 @@ class HeaderDetails: UIView {
     
     var lblRating: UILabel! = {
         let label = UILabel()
-        FormattingCenter().secTitleLightCenter(parameter: label, text: label.text ?? "")
+        FormattingCenter().subTitleWhiteCenter(parameter: label, text: label.text ?? "")
         return label
     }()
     

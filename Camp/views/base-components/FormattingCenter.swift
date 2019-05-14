@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class FormattingCenter {
-    func mainTitleLightLeft(parameter: UILabel, text: String) {
+    func titleWhiteLeft(parameter: UILabel, text: String) {
         parameter.font = UIFont.boldSystemFont(ofSize: 25)
         parameter.text = text
         parameter.textAlignment = .left
@@ -18,7 +18,7 @@ class FormattingCenter {
         parameter.translatesAutoresizingMaskIntoConstraints = false
     }
 
-    func mainTitleGreenLeft(parameter: UILabel, text: String) {
+    func subTitleGreenLeft(parameter: UILabel, text: String) {
         parameter.font = UIFont.boldSystemFont(ofSize: 20)
         parameter.text = text
         parameter.textAlignment = .left
@@ -26,7 +26,7 @@ class FormattingCenter {
         parameter.translatesAutoresizingMaskIntoConstraints = false
     }
     
-    func secTitleLightLeft(parameter: UILabel, text: String) {
+    func subTitleWhiteLeft(parameter: UILabel, text: String) {
         parameter.font = UIFont.boldSystemFont(ofSize: 15)
         parameter.text = text
         parameter.textAlignment = .left
@@ -34,7 +34,7 @@ class FormattingCenter {
         parameter.translatesAutoresizingMaskIntoConstraints = false
     }
     
-    func secTitleLightCenter(parameter: UILabel, text: String) {
+    func subTitleWhiteCenter(parameter: UILabel, text: String) {
         parameter.font = UIFont.boldSystemFont(ofSize: 15)
         parameter.text = text
         parameter.textAlignment = .center
@@ -42,7 +42,7 @@ class FormattingCenter {
         parameter.translatesAutoresizingMaskIntoConstraints = false
     }
     
-    func secTitleGrayLeft(parameter: UILabel, text: String) {
+    func subTitleGrayLeft(parameter: UILabel, text: String) {
         parameter.font = UIFont.boldSystemFont(ofSize: 15)
         parameter.text = text
         parameter.textAlignment = .left
@@ -50,7 +50,7 @@ class FormattingCenter {
         parameter.translatesAutoresizingMaskIntoConstraints = false
     }
     
-    func secTitleBlackLeft(parameter: UILabel, text: String) {
+    func subTitleBlackLeft(parameter: UILabel, text: String) {
         parameter.font = UIFont.boldSystemFont(ofSize: 15)
         parameter.text = text
         parameter.textAlignment = .left

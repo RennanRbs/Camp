@@ -10,9 +10,16 @@ import Foundation
 import UIKit
 
 class GeneralBoxDetails: UIView {
-    var lblGeneral: UILabel! = {
+    private let generalString: String = "General"
+    private let contactString: String = "Contact"
+    private let adressString: String = "Address"
+    private let operationString: String = "Operation"
+    private let routeString: String = "Route"
+    private let rateString: String = "Rate"
+    
+    internal lazy var lblGeneral: UILabel = {
         let label = UILabel()
-        FormattingCenter().secTitleGrayLeft(parameter: label, text: "General")
+        FormattingCenter().subTitleGrayLeft(parameter: label, text: generalString )
         return label
     }()
     
@@ -25,67 +32,71 @@ class GeneralBoxDetails: UIView {
         return view
     }()
     
-    var lblContact: UILabel! = {
+    internal lazy var lblContact: UILabel! = {
         var label = UILabel()
-        FormattingCenter().secTitleGrayLeft(parameter: label, text: "Contact")
+        FormattingCenter().subTitleGrayLeft(parameter: label, text: contactString)
         return label
     }()
     
     var lblPhoneNumber: UILabel = {
         var label = UILabel()
-        FormattingCenter().secTitleBlackLeft(parameter: label, text: label.text ?? "00 0000-0000")
+        FormattingCenter().subTitleBlackLeft(parameter: label, text: label.text ?? "00 0000-0000")
         return label
     }()
     
     var lblEmail: UILabel = {
         var label = UILabel()
-        FormattingCenter().secTitleBlackLeft(parameter: label, text: label.text ?? "teste@gmail.com")
+        FormattingCenter().subTitleBlackLeft(parameter: label, text: label.text ?? "teste@gmail.com")
         return label
     }()
     
-    var lblAddress: UILabel! = {
+    internal lazy var lblAddress: UILabel! = {
         var label = UILabel()
-        FormattingCenter().secTitleGrayLeft(parameter: label, text: "Address")
+        FormattingCenter().subTitleGrayLeft(parameter: label, text: adressString)
         return label
     }()
     
     var lblAddressDetail: UILabel = {
         var label = UILabel()
-        FormattingCenter().secTitleBlackLeft(parameter: label, text: label.text ?? "Rua do teste, 2011 - Teste")
+        FormattingCenter().subTitleBlackLeft(parameter: label, text: label.text ?? "Rua do teste, 2011 - Teste")
         return label
     }()
     
-    var lblOperation: UILabel! = {
+    internal lazy var lblOperation: UILabel! = {
         var label = UILabel()
-        FormattingCenter().secTitleGrayLeft(parameter: label, text: "Operation")
+        FormattingCenter().subTitleGrayLeft(parameter: label, text: operationString)
         return label
     }()
     
     var lblOperationDetail: UILabel = {
         var label = UILabel()
-        FormattingCenter().secTitleBlackLeft(parameter: label, text: label.text ?? "Segunda - Segunda")
+        FormattingCenter().subTitleBlackLeft(parameter: label, text: label.text ?? "Segunda - Segunda")
         return label
     }()
     
-    var bntRoute: UIButton = {
+    internal lazy var bntRoute: UIButton = {
         var button = UIButton()
         button.backgroundColor = UIColor.init(named: "LightGray")
         button.layer.borderColor = UIColor.init(named: "Orange")?.cgColor
         button.layer.borderWidth = 2.0
         button.layer.cornerRadius = 13.0
-        button.setTitle("Route", for: .normal)
+        button.setTitle(routeString, for: .normal)
         button.setTitleColor(UIColor.init(named: "Orange"), for: .normal)
+        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        button.tag = 1
         return button
     }()
     
-    var bntRating: UIButton = {
+    internal lazy var bntRating: UIButton = {
         var button = UIButton()
         button.backgroundColor = UIColor.init(named: "LightGray")
         button.layer.borderColor = UIColor.init(named: "Orange")?.cgColor
         button.layer.borderWidth = 2.0
         button.layer.cornerRadius = 13.0
-        button.setTitle("Rate", for: .normal)
+        button.setTitle(rateString, for: .normal)
         button.setTitleColor(UIColor.init(named: "Orange"), for: .normal)
+        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        button.tag = 2
         return button
     }()
     
@@ -112,5 +123,15 @@ class GeneralBoxDetails: UIView {
         viewBox.addSubview(lblOperationDetail)
         viewBox.addSubview(bntRating)
         addConstraintsToView()
+    }
+    
+    @objc func buttonAction(sender: UIButton!) {
+        let btnsendtag: UIButton = sender
+        
+        if (btnsendtag.tag == 1) {
+            //Chama o delegate de rota
+        } else if (btnsendtag.tag == 2) {
+            //Chama o delegate de avaliar
+        }
     }
 }
