@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3903177228593D900EAA8CE /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3903175228593D900EAA8CE /* CoreDataModel.xcdatamodeld */; };
+		A390317922859AA100EAA8CE /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390317822859AA100EAA8CE /* CoreDataManager.swift */; };
+		A390317E2287198D00EAA8CE /* Place+methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390317D2287198D00EAA8CE /* Place+methods.swift */; };
+		A390318022871BB700EAA8CE /* NSManagedObject+DataAccessMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390317F22871BB700EAA8CE /* NSManagedObject+DataAccessMethods.swift */; };
+		A39031822287593900EAA8CE /* AddPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39031812287593900EAA8CE /* AddPlaceViewController.swift */; };
+		A39031862287667700EAA8CE /* CoreDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39031852287667700EAA8CE /* CoreDataManagerTests.swift */; };
+		A39031912288452C00EAA8CE /* PlaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39031902288452C00EAA8CE /* PlaceTests.swift */; };
 		A3999D732284521B0024FFC7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3999D722284521B0024FFC7 /* MapViewController.swift */; };
 		A3999D75228458F50024FFC7 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3999D74228458F50024FFC7 /* DetailsViewController.swift */; };
 		A3999D772284599E0024FFC7 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3999D762284599E0024FFC7 /* ReportViewController.swift */; };
@@ -15,7 +22,6 @@
 		E8B8D08E22772F2600E3DA59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B8D08D22772F2600E3DA59 /* AppDelegate.swift */; };
 		E8B8D09522772F2800E3DA59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8B8D09422772F2800E3DA59 /* Assets.xcassets */; };
 		E8B8D09822772F2800E3DA59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8B8D09622772F2800E3DA59 /* LaunchScreen.storyboard */; };
-		E8B8D0A322772F2800E3DA59 /* CampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B8D0A222772F2800E3DA59 /* CampTests.swift */; };
 		E8B8D0AE22772F2800E3DA59 /* CampUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B8D0AD22772F2800E3DA59 /* CampUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A3903176228593D900EAA8CE /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		A390317822859AA100EAA8CE /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		A390317D2287198D00EAA8CE /* Place+methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Place+methods.swift"; sourceTree = "<group>"; };
+		A390317F22871BB700EAA8CE /* NSManagedObject+DataAccessMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+DataAccessMethods.swift"; sourceTree = "<group>"; };
+		A39031812287593900EAA8CE /* AddPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceViewController.swift; sourceTree = "<group>"; };
+		A39031852287667700EAA8CE /* CoreDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManagerTests.swift; sourceTree = "<group>"; };
+		A39031902288452C00EAA8CE /* PlaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTests.swift; sourceTree = "<group>"; };
 		A3999D722284521B0024FFC7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A3999D74228458F50024FFC7 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		A3999D762284599E0024FFC7 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +61,6 @@
 		E8B8D09722772F2800E3DA59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8B8D09922772F2800E3DA59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8B8D09E22772F2800E3DA59 /* CampTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8B8D0A222772F2800E3DA59 /* CampTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampTests.swift; sourceTree = "<group>"; };
 		E8B8D0A422772F2800E3DA59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8B8D0A922772F2800E3DA59 /* CampUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8B8D0AD22772F2800E3DA59 /* CampUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampUITests.swift; sourceTree = "<group>"; };
@@ -80,6 +92,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A390318722877FA500EAA8CE /* services */ = {
+			isa = PBXGroup;
+			children = (
+				A390318822877FB000EAA8CE /* core-data */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		A390318822877FB000EAA8CE /* core-data */ = {
+			isa = PBXGroup;
+			children = (
+				A39031852287667700EAA8CE /* CoreDataManagerTests.swift */,
+			);
+			path = "core-data";
+			sourceTree = "<group>";
+		};
+		A390318922877FC600EAA8CE /* models */ = {
+			isa = PBXGroup;
+			children = (
+				A39031902288452C00EAA8CE /* PlaceTests.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
 		A3999D6722844F760024FFC7 /* views */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +148,7 @@
 				A3999D762284599E0024FFC7 /* ReportViewController.swift */,
 				A3999D78228459DE0024FFC7 /* RatingViewController.swift */,
 				A3999D7A22845AC00024FFC7 /* ProfileViewController.swift */,
+				A39031812287593900EAA8CE /* AddPlaceViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -119,6 +156,7 @@
 		A3999D6B2284501F0024FFC7 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				A390317D2287198D00EAA8CE /* Place+methods.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -142,6 +180,9 @@
 		A3999D6E228450470024FFC7 /* core-data */ = {
 			isa = PBXGroup;
 			children = (
+				A3903175228593D900EAA8CE /* CoreDataModel.xcdatamodeld */,
+				A390317822859AA100EAA8CE /* CoreDataManager.swift */,
+				A390317F22871BB700EAA8CE /* NSManagedObject+DataAccessMethods.swift */,
 			);
 			path = "core-data";
 			sourceTree = "<group>";
@@ -207,7 +248,8 @@
 		E8B8D0A122772F2800E3DA59 /* CampTests */ = {
 			isa = PBXGroup;
 			children = (
-				E8B8D0A222772F2800E3DA59 /* CampTests.swift */,
+				A390318922877FC600EAA8CE /* models */,
+				A390318722877FA500EAA8CE /* services */,
 				E8B8D0A422772F2800E3DA59 /* Info.plist */,
 			);
 			path = CampTests;
@@ -374,11 +416,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A390317E2287198D00EAA8CE /* Place+methods.swift in Sources */,
+				A39031822287593900EAA8CE /* AddPlaceViewController.swift in Sources */,
 				A3999D7B22845AC00024FFC7 /* ProfileViewController.swift in Sources */,
 				A3999D772284599E0024FFC7 /* ReportViewController.swift in Sources */,
 				A3999D79228459DE0024FFC7 /* RatingViewController.swift in Sources */,
+				A390318022871BB700EAA8CE /* NSManagedObject+DataAccessMethods.swift in Sources */,
 				A3999D732284521B0024FFC7 /* MapViewController.swift in Sources */,
 				E8B8D08E22772F2600E3DA59 /* AppDelegate.swift in Sources */,
+				A3903177228593D900EAA8CE /* CoreDataModel.xcdatamodeld in Sources */,
+				A390317922859AA100EAA8CE /* CoreDataManager.swift in Sources */,
 				A3999D75228458F50024FFC7 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,7 +434,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8B8D0A322772F2800E3DA59 /* CampTests.swift in Sources */,
+				A39031862287667700EAA8CE /* CoreDataManagerTests.swift in Sources */,
+				A39031912288452C00EAA8CE /* PlaceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,7 +632,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7SH46749RP;
+				DEVELOPMENT_TEAM = MK2CL4Y92D;
 				INFOPLIST_FILE = CampTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -605,7 +653,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7SH46749RP;
+				DEVELOPMENT_TEAM = MK2CL4Y92D;
 				INFOPLIST_FILE = CampTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -700,6 +748,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A3903175228593D900EAA8CE /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A3903176228593D900EAA8CE /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = A3903176228593D900EAA8CE /* CoreDataModel.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E8B8D08222772F2600E3DA59 /* Project object */;
 }
