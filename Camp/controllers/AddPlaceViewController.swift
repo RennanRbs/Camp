@@ -1,25 +1,19 @@
 //
-//  MapViewController.swift
+//  AddPlaceViewController.swift
 //  Camp
 //
-//  Created by Bruno Rocha on 09/05/19.
+//  Created by Bruno Rocha on 11/05/19.
 //  Copyright © 2019 Rennan Rebouças. All rights reserved.
 //
 
 import UIKit
 
-class MapViewController: UIViewController {
+class AddPlaceViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.white
-        coreDataTests()
     }
-    
-    func coreDataTests() {
-        
-    }
-    
+
     /*
     // MARK: - Navigation
 
