@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
+		4D850AD8228B22B200A22965 /* GeneralBoxDetails+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D850AD7228B22B200A22965 /* GeneralBoxDetails+Constraints.swift */; };
 		4DE44DBD22899241009FF883 /* HeaderDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE44DBC22899241009FF883 /* HeaderDetails.swift */; };
 		4DE44DC222899EE3009FF883 /* FormattingCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE44DC122899EE3009FF883 /* FormattingCenter.swift */; };
 		4DE44DC72289AA18009FF883 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE44DC52289AA18009FF883 /* DetailsViewController.swift */; };
@@ -48,7 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-
+		4D850AD7228B22B200A22965 /* GeneralBoxDetails+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeneralBoxDetails+Constraints.swift"; sourceTree = "<group>"; };
 		4DE44DBC22899241009FF883 /* HeaderDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderDetails.swift; sourceTree = "<group>"; };
 		4DE44DC122899EE3009FF883 /* FormattingCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FormattingCenter.swift; path = "Camp/views/base-components/FormattingCenter.swift"; sourceTree = SOURCE_ROOT; };
 		4DE44DC52289AA18009FF883 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
@@ -102,7 +102,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-
+		4DE44DAF22899105009FF883 /* base-components */ = {
+			isa = PBXGroup;
+			children = (
+				4DE44DBC22899241009FF883 /* HeaderDetails.swift */,
+				4DE44DC9228AE56E009FF883 /* HeaderDetails+Constraints.swift */,
+				4DE44DCB228AE5F9009FF883 /* GeneralBoxDetails.swift */,
+				4D850AD7228B22B200A22965 /* GeneralBoxDetails+Constraints.swift */,
+			);
+			path = "base-components";
+			sourceTree = "<group>";
+		};
 		A390318722877FA500EAA8CE /* services */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,16 +135,6 @@
 				A39031902288452C00EAA8CE /* PlaceTests.swift */,
 			);
 			path = models;
-			sourceTree = "<group>";
-		};
-        4DE44DAF22899105009FF883 /* base-components */ = {
-			isa = PBXGroup;
-			children = (
-				4DE44DBC22899241009FF883 /* HeaderDetails.swift */,
-				4DE44DC9228AE56E009FF883 /* HeaderDetails+Constraints.swift */,
-				4DE44DCB228AE5F9009FF883 /* GeneralBoxDetails.swift */,
-			);
-			path = "base-components";
 			sourceTree = "<group>";
 		};
 		A3999D6722844F760024FFC7 /* views */ = {
@@ -445,8 +445,8 @@
 				E8B8D08E22772F2600E3DA59 /* AppDelegate.swift in Sources */,
 				4DE44DCC228AE5F9009FF883 /* GeneralBoxDetails.swift in Sources */,
 				A3903177228593D900EAA8CE /* CoreDataModel.xcdatamodeld in Sources */,
+				4D850AD8228B22B200A22965 /* GeneralBoxDetails+Constraints.swift in Sources */,
 				A390317922859AA100EAA8CE /* CoreDataManager.swift in Sources */,
-				A3999D75228458F50024FFC7 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
