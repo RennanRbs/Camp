@@ -13,6 +13,7 @@
     </entity>
     <entity name="NearbyPlace" representedClassName="NearbyPlace" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="nearbyPlace" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Place" inverseName="placeNearby" inverseEntity="Place" syncable="YES"/>
     </entity>
     <entity name="Photo" representedClassName="Photo" syncable="YES" codeGenerationType="class">
         <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
@@ -29,6 +30,7 @@
         <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="placeAddress" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Address" inverseName="addressPlace" inverseEntity="Address" syncable="YES"/>
+        <relationship name="placeNearby" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NearbyPlace" inverseName="nearbyPlace" inverseEntity="NearbyPlace" syncable="YES"/>
         <relationship name="placePhoto" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Photo" inverseName="photoPlace" inverseEntity="Photo" syncable="YES"/>
         <relationship name="placeResource" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Resource" inverseName="resourcePlace" inverseEntity="Resource" syncable="YES"/>
     </entity>
@@ -37,11 +39,11 @@
         <relationship name="resourcePlace" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Place" inverseName="placeResource" inverseEntity="Place" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Place" positionX="-303.84375" positionY="-48.2890625" width="128" height="223"/>
+        <element name="Place" positionX="-303.84375" positionY="-48.2890625" width="128" height="238"/>
         <element name="Address" positionX="-54" positionY="54" width="128" height="133"/>
         <element name="Resource" positionX="-530.046875" positionY="39.34375" width="128" height="75"/>
         <element name="Photo" positionX="-286.12109375" positionY="297.65625" width="128" height="73"/>
-        <element name="NearbyPlace" positionX="-252" positionY="198" width="128" height="60"/>
+        <element name="NearbyPlace" positionX="-252" positionY="198" width="128" height="75"/>
         <element name="Category" positionX="-243" positionY="207" width="128" height="60"/>
     </elements>
 </model>

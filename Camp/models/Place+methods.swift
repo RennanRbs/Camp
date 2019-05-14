@@ -25,4 +25,20 @@ extension Place {
             return nil
         }
     }
+    
+    static func create(withName name: String, category: String, address: Address, resources: [Resource], nearbyPlaces: [NearbyPlace], informations: String, photos: [Photo]? = nil) -> Place {
+        let newPlace = Place(context: CoreDataManager.shared.context)
+        newPlace.name = name
+        newPlace.category = category
+        newPlace.placeAddress = address
+        newPlace.placeResource = NSSet(array: resources)
+        newPlace.placeNearby = NSSet(array: nearbyPlaces)
+        newPlace.informations = informations
+        
+        if let photos = photos {
+            newPlace.addToPlacePhoto(NSSet(array: photos))
+        }
+        
+        return newPlace
+    }
 }

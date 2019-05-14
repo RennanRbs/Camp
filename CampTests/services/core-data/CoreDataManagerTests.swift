@@ -34,6 +34,7 @@ class CoreDataManagerTests: XCTestCase {
         XCTAssertNotNil(persistentContainer)
     }
     
+    /// Checks if CoreDataManager throws an exception when saving context
     func test_saveContext_throwsAnException() {
         XCTAssertNoThrow(try CoreDataManager.shared.saveContext())
     }
