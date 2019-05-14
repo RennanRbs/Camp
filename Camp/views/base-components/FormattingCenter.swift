@@ -41,4 +41,12 @@ class FormattingCenter {
         parameter.textColor = UIColor.init(named: "White")
         parameter.translatesAutoresizingMaskIntoConstraints = false
     }
+    
+    func secTitleGrayLeft(parameter: UILabel, text: String) {
+        parameter.font = UIFont.boldSystemFont(ofSize: 15)
+        parameter.text = text
+        parameter.textAlignment = .left
+        parameter.textColor = UIColor.init(named: "Gray")
+        parameter.translatesAutoresizingMaskIntoConstraints = false
+    }
 }

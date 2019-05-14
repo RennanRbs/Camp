@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4DE44DBD22899241009FF883 /* HeaderDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE44DBC22899241009FF883 /* HeaderDetails.swift */; };
-		4DE44DBF2289925B009FF883 /* HeaderDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DE44DBE2289925B009FF883 /* HeaderDetails.xib */; };
 		4DE44DC222899EE3009FF883 /* FormattingCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE44DC122899EE3009FF883 /* FormattingCenter.swift */; };
 		4DE44DC72289AA18009FF883 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE44DC52289AA18009FF883 /* DetailsViewController.swift */; };
+		4DE44DCA228AE56E009FF883 /* HeaderDetails+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE44DC9228AE56E009FF883 /* HeaderDetails+Constraints.swift */; };
+		4DE44DCC228AE5F9009FF883 /* GeneralBoxDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE44DCB228AE5F9009FF883 /* GeneralBoxDetails.swift */; };
 		A3999D732284521B0024FFC7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3999D722284521B0024FFC7 /* MapViewController.swift */; };
 		A3999D772284599E0024FFC7 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3999D762284599E0024FFC7 /* ReportViewController.swift */; };
 		A3999D79228459DE0024FFC7 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3999D78228459DE0024FFC7 /* RatingViewController.swift */; };
@@ -41,9 +42,10 @@
 
 /* Begin PBXFileReference section */
 		4DE44DBC22899241009FF883 /* HeaderDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderDetails.swift; sourceTree = "<group>"; };
-		4DE44DBE2289925B009FF883 /* HeaderDetails.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderDetails.xib; sourceTree = "<group>"; };
 		4DE44DC122899EE3009FF883 /* FormattingCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FormattingCenter.swift; path = "Camp/views/base-components/FormattingCenter.swift"; sourceTree = SOURCE_ROOT; };
 		4DE44DC52289AA18009FF883 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		4DE44DC9228AE56E009FF883 /* HeaderDetails+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HeaderDetails+Constraints.swift"; sourceTree = "<group>"; };
+		4DE44DCB228AE5F9009FF883 /* GeneralBoxDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralBoxDetails.swift; sourceTree = "<group>"; };
 		A3999D722284521B0024FFC7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A3999D762284599E0024FFC7 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		A3999D78228459DE0024FFC7 /* RatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
@@ -90,7 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				4DE44DBC22899241009FF883 /* HeaderDetails.swift */,
-				4DE44DBE2289925B009FF883 /* HeaderDetails.xib */,
+				4DE44DC9228AE56E009FF883 /* HeaderDetails+Constraints.swift */,
+				4DE44DCB228AE5F9009FF883 /* GeneralBoxDetails.swift */,
 			);
 			path = "base-components";
 			sourceTree = "<group>";
@@ -338,7 +341,6 @@
 			files = (
 				E8B8D09822772F2800E3DA59 /* LaunchScreen.storyboard in Resources */,
 				E8B8D09522772F2800E3DA59 /* Assets.xcassets in Resources */,
-				4DE44DBF2289925B009FF883 /* HeaderDetails.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,11 +389,13 @@
 				A3999D7B22845AC00024FFC7 /* ProfileViewController.swift in Sources */,
 				A3999D772284599E0024FFC7 /* ReportViewController.swift in Sources */,
 				A3999D79228459DE0024FFC7 /* RatingViewController.swift in Sources */,
+				4DE44DCA228AE56E009FF883 /* HeaderDetails+Constraints.swift in Sources */,
 				4DE44DC72289AA18009FF883 /* DetailsViewController.swift in Sources */,
 				A3999D732284521B0024FFC7 /* MapViewController.swift in Sources */,
 				4DE44DBD22899241009FF883 /* HeaderDetails.swift in Sources */,
 				4DE44DC222899EE3009FF883 /* FormattingCenter.swift in Sources */,
 				E8B8D08E22772F2600E3DA59 /* AppDelegate.swift in Sources */,
+				4DE44DCC228AE5F9009FF883 /* GeneralBoxDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
