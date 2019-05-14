@@ -12,11 +12,17 @@
 		A3999D772284599E0024FFC7 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3999D762284599E0024FFC7 /* ReportViewController.swift */; };
 		A3999D79228459DE0024FFC7 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3999D78228459DE0024FFC7 /* RatingViewController.swift */; };
 		A3999D7B22845AC00024FFC7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3999D7A22845AC00024FFC7 /* ProfileViewController.swift */; };
+		E87059E722898D1C004DDA67 /* TimeLineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E87059E622898D1C004DDA67 /* TimeLineView.xib */; };
+		E87059E922898E89004DDA67 /* TimeLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87059E822898E89004DDA67 /* TimeLineView.swift */; };
+		E87059ED22899BBF004DDA67 /* TimeLineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E87059EC22899BBF004DDA67 /* TimeLineTableViewCell.xib */; };
+		E87059EF22899E3C004DDA67 /* TimeLineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87059EE22899E3C004DDA67 /* TimeLineTableViewCell.swift */; };
 		E8B8D08E22772F2600E3DA59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B8D08D22772F2600E3DA59 /* AppDelegate.swift */; };
 		E8B8D09522772F2800E3DA59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8B8D09422772F2800E3DA59 /* Assets.xcassets */; };
 		E8B8D09822772F2800E3DA59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8B8D09622772F2800E3DA59 /* LaunchScreen.storyboard */; };
 		E8B8D0A322772F2800E3DA59 /* CampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B8D0A222772F2800E3DA59 /* CampTests.swift */; };
 		E8B8D0AE22772F2800E3DA59 /* CampUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B8D0AD22772F2800E3DA59 /* CampUITests.swift */; };
+		E8B95B672284690500F6EC71 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8B95B662284690500F6EC71 /* HeaderView.xib */; };
+		E8B95B6922846CBC00F6EC71 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B95B6822846CBC00F6EC71 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +48,10 @@
 		A3999D762284599E0024FFC7 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		A3999D78228459DE0024FFC7 /* RatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
 		A3999D7A22845AC00024FFC7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E87059E622898D1C004DDA67 /* TimeLineView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeLineView.xib; sourceTree = "<group>"; };
+		E87059E822898E89004DDA67 /* TimeLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineView.swift; sourceTree = "<group>"; };
+		E87059EC22899BBF004DDA67 /* TimeLineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeLineTableViewCell.xib; sourceTree = "<group>"; };
+		E87059EE22899E3C004DDA67 /* TimeLineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineTableViewCell.swift; sourceTree = "<group>"; };
 		E8B8D08A22772F2600E3DA59 /* Camp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Camp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8B8D08D22772F2600E3DA59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8B8D09422772F2800E3DA59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +63,8 @@
 		E8B8D0A922772F2800E3DA59 /* CampUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8B8D0AD22772F2800E3DA59 /* CampUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampUITests.swift; sourceTree = "<group>"; };
 		E8B8D0AF22772F2800E3DA59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8B95B662284690500F6EC71 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		E8B95B6822846CBC00F6EC71 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +181,19 @@
 			path = assets;
 			sourceTree = "<group>";
 		};
+		E84EA5AD2284666100B5DA16 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				E8B95B662284690500F6EC71 /* HeaderView.xib */,
+				E8B95B6822846CBC00F6EC71 /* HeaderView.swift */,
+				E87059E622898D1C004DDA67 /* TimeLineView.xib */,
+				E87059E822898E89004DDA67 /* TimeLineView.swift */,
+				E87059EC22899BBF004DDA67 /* TimeLineTableViewCell.xib */,
+				E87059EE22899E3C004DDA67 /* TimeLineTableViewCell.swift */,
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
 		E8B8D08122772F2600E3DA59 = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +217,7 @@
 		E8B8D08C22772F2600E3DA59 /* Camp */ = {
 			isa = PBXGroup;
 			children = (
+				E84EA5AD2284666100B5DA16 /* xibs */,
 				A3999D71228450710024FFC7 /* assets */,
 				A3999D70228450680024FFC7 /* application */,
 				A3999D6F228450540024FFC7 /* utils */,
@@ -327,8 +353,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E87059ED22899BBF004DDA67 /* TimeLineTableViewCell.xib in Resources */,
+				E8B95B672284690500F6EC71 /* HeaderView.xib in Resources */,
 				E8B8D09822772F2800E3DA59 /* LaunchScreen.storyboard in Resources */,
 				E8B8D09522772F2800E3DA59 /* Assets.xcassets in Resources */,
+				E87059E722898D1C004DDA67 /* TimeLineView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,10 +405,13 @@
 			files = (
 				A3999D7B22845AC00024FFC7 /* ProfileViewController.swift in Sources */,
 				A3999D772284599E0024FFC7 /* ReportViewController.swift in Sources */,
+				E87059EF22899E3C004DDA67 /* TimeLineTableViewCell.swift in Sources */,
 				A3999D79228459DE0024FFC7 /* RatingViewController.swift in Sources */,
 				A3999D732284521B0024FFC7 /* MapViewController.swift in Sources */,
 				E8B8D08E22772F2600E3DA59 /* AppDelegate.swift in Sources */,
 				A3999D75228458F50024FFC7 /* DetailsViewController.swift in Sources */,
+				E8B95B6922846CBC00F6EC71 /* HeaderView.swift in Sources */,
+				E87059E922898E89004DDA67 /* TimeLineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

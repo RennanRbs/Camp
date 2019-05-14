@@ -9,21 +9,32 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-
+    let imageViewHeader: HeaderView = {
+        let imageView = HeaderView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
+    let imageViewTimeLine: TimeLineView = {
+        let imageView = TimeLineView(frame: CGRect.zero)
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setup()
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setup() {
+        view.addSubview(imageViewHeader)
+        view.addSubview(imageViewTimeLine)
+        imageViewHeader.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        imageViewHeader.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        imageViewHeader.topAnchor.constraint(equalTo: view.topAnchor, constant: 50).isActive = true
+        imageViewTimeLine.topAnchor.constraint(equalTo: imageViewHeader.bottomAnchor).isActive = true
+        imageViewTimeLine.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        imageViewTimeLine.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        imageViewTimeLine.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        
     }
-    */
-
 }

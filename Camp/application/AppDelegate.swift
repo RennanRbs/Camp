@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     /// The base Navigation Controller, its rootViewController is a MapViewController
     lazy var rootNavigationController: UINavigationController = {
-        let mapViewController = MapViewController()
+        let mapViewController = ProfileViewController()
         return UINavigationController(rootViewController: mapViewController)
     }()
 
