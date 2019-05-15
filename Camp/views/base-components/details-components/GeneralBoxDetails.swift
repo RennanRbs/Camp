@@ -19,7 +19,7 @@ class GeneralBoxDetails: UIView {
     
     internal lazy var lblGeneral: UILabel = {
         let label = UILabel()
-        FormattingCenter().subTitleGrayLeft(parameter: label, text: generalString )
+        FormattingCenter().subTitleGrayLeftFor(label, text: generalString)
         return label
     }()
     
@@ -34,43 +34,43 @@ class GeneralBoxDetails: UIView {
     
     internal lazy var lblContact: UILabel! = {
         var label = UILabel()
-        FormattingCenter().subTitleGrayLeft(parameter: label, text: contactString)
+        FormattingCenter().subTitleGrayLeftFor(label, text: contactString)
         return label
     }()
     
     var lblPhoneNumber: UILabel = {
         var label = UILabel()
-        FormattingCenter().subTitleBlackLeft(parameter: label, text: label.text ?? "00 0000-0000")
+        FormattingCenter().subTitleBlackLeftFor(label, text: label.text ?? "00 0000-0000")
         return label
     }()
     
     var lblEmail: UILabel = {
         var label = UILabel()
-        FormattingCenter().subTitleBlackLeft(parameter: label, text: label.text ?? "teste@gmail.com")
+        FormattingCenter().subTitleBlackLeftFor(label, text: label.text ?? "teste@gmail.com")
         return label
     }()
     
     internal lazy var lblAddress: UILabel! = {
         var label = UILabel()
-        FormattingCenter().subTitleGrayLeft(parameter: label, text: adressString)
+        FormattingCenter().subTitleGrayLeftFor(label, text: adressString)
         return label
     }()
     
     var lblAddressDetail: UILabel = {
         var label = UILabel()
-        FormattingCenter().subTitleBlackLeft(parameter: label, text: label.text ?? "Rua do teste, 2011 - Teste")
+        FormattingCenter().subTitleBlackLeftFor(label, text: label.text ?? "Rua do teste, 2011 - Teste")
         return label
     }()
     
     internal lazy var lblOperation: UILabel! = {
         var label = UILabel()
-        FormattingCenter().subTitleGrayLeft(parameter: label, text: operationString)
+        FormattingCenter().subTitleGrayLeftFor(label, text: operationString)
         return label
     }()
     
     var lblOperationDetail: UILabel = {
         var label = UILabel()
-        FormattingCenter().subTitleBlackLeft(parameter: label, text: label.text ?? "Segunda - Segunda")
+        FormattingCenter().subTitleBlackLeftFor(label, text: label.text ?? "Segunda - Segunda")
         return label
     }()
     
