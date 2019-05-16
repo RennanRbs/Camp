@@ -17,7 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     lazy var rootNavigationController: UINavigationController = {
 
         let mapViewController = DetailsViewController()
-        return UINavigationController(rootViewController: mapViewController)
+        let profileViewController = ProfileViewController()
+        return UINavigationController(rootViewController: profileViewController)
     }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

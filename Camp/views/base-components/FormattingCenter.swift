@@ -10,43 +10,51 @@ import Foundation
 import UIKit
 
 class FormattingCenter {
-    func mainTitleLightLeft(parameter: UILabel, text: String) {
-        parameter.font = UIFont.boldSystemFont(ofSize: 25)
-        parameter.text = text
-        parameter.textAlignment = .left
-        parameter.textColor = UIColor.init(named: "White")
-        parameter.translatesAutoresizingMaskIntoConstraints = false
+    func titleWhiteLeftFor(_ label: UILabel, text: String) {
+        label.font = UIFont.boldSystemFont(ofSize: 25)
+        label.text = text
+        label.textAlignment = .left
+        label.textColor = UIColor.init(named: "White")
+        label.translatesAutoresizingMaskIntoConstraints = false
     }
 
-    func mainTitleGreenLeft(parameter: UILabel, text: String) {
-        parameter.font = UIFont.boldSystemFont(ofSize: 20)
-        parameter.text = text
-        parameter.textAlignment = .left
-        parameter.textColor = UIColor.init(named: "Green")
-        parameter.translatesAutoresizingMaskIntoConstraints = false
+    func subTitleGreenLeftFor(_ label: UILabel, text: String) {
+        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.text = text
+        label.textAlignment = .left
+        label.textColor = UIColor.init(named: "Green")
+        label.translatesAutoresizingMaskIntoConstraints = false
     }
     
-    func secTitleLightLeft(parameter: UILabel, text: String) {
-        parameter.font = UIFont.boldSystemFont(ofSize: 15)
-        parameter.text = text
-        parameter.textAlignment = .left
-        parameter.textColor = UIColor.init(named: "White")
-        parameter.translatesAutoresizingMaskIntoConstraints = false
+    func subTitleWhiteLeftFor(_ label: UILabel, text: String) {
+        label.font = UIFont.boldSystemFont(ofSize: 15)
+        label.text = text
+        label.textAlignment = .left
+        label.textColor = UIColor.init(named: "White")
+        label.translatesAutoresizingMaskIntoConstraints = false
     }
     
-    func secTitleLightCenter(parameter: UILabel, text: String) {
-        parameter.font = UIFont.boldSystemFont(ofSize: 15)
-        parameter.text = text
-        parameter.textAlignment = .center
-        parameter.textColor = UIColor.init(named: "White")
-        parameter.translatesAutoresizingMaskIntoConstraints = false
+    func subTitleWhiteCenterFor(_ label: UILabel, text: String) {
+        label.font = UIFont.boldSystemFont(ofSize: 15)
+        label.text = text
+        label.textAlignment = .center
+        label.textColor = UIColor.init(named: "White")
+        label.translatesAutoresizingMaskIntoConstraints = false
     }
     
-    func secTitleGrayLeft(parameter: UILabel, text: String) {
-        parameter.font = UIFont.boldSystemFont(ofSize: 15)
-        parameter.text = text
-        parameter.textAlignment = .left
-        parameter.textColor = UIColor.init(named: "Gray")
-        parameter.translatesAutoresizingMaskIntoConstraints = false
+    func subTitleGrayLeftFor(_ label: UILabel, text: String) {
+        label.font = UIFont.boldSystemFont(ofSize: 15)
+        label.text = text
+        label.textAlignment = .left
+        label.textColor = UIColor.init(named: "Gray")
+        label.translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+    func subTitleBlackLeftFor(_ label: UILabel, text: String) {
+        label.font = UIFont.boldSystemFont(ofSize: 15)
+        label.text = text
+        label.textAlignment = .left
+        label.textColor = UIColor.init(named: "Black")
+        label.translatesAutoresizingMaskIntoConstraints = false
     }
 }

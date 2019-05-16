@@ -10,34 +10,34 @@ import UIKit
 
 class HeaderDetails: UIView {
 
-    var lblName: UILabel! = {
+    var lblName: UILabel = {
        let label = UILabel()
-        FormattingCenter().mainTitleLightLeft(parameter: label, text: label.text ?? "")
+        FormattingCenter().titleWhiteLeftFor(label, text: label.text ?? "")
         return label
     }()
     
-    var lblOperation: UILabel! = {
+    var lblOperation: UILabel = {
         let label = UILabel()
-        FormattingCenter().mainTitleGreenLeft(parameter: label, text: label.text ?? "")
+        FormattingCenter().subTitleGreenLeftFor(label, text: label.text ?? "")
         return label
     }()
     
-    var lblDistance: UILabel! = {
+    var lblDistance: UILabel = {
         let label = UILabel()
-        FormattingCenter().secTitleLightLeft(parameter: label, text: label.text ?? "")
+        FormattingCenter().subTitleWhiteLeftFor(label, text: label.text ?? "")
         return label
     }()
     
-    var imgRating: UIImageView! = {
+    var imgRating: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage.init(named: "RatingImage")
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
     
-    var lblRating: UILabel! = {
+    var lblRating: UILabel = {
         let label = UILabel()
-        FormattingCenter().secTitleLightCenter(parameter: label, text: label.text ?? "")
+        FormattingCenter().subTitleWhiteCenterFor(label, text: label.text ?? "")
         return label
     }()
     

@@ -14,21 +14,33 @@ class DetailsViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = UIColor.blue
-        let viewExample = HeaderDetails()
         
-        view.addSubview(viewExample)
+        //HeaderDetails
+        let viewHeaderDetails = HeaderDetails()
         
-        viewExample.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(viewHeaderDetails)
         
-        viewExample.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: 0).isActive = true
-        viewExample.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 0).isActive = true
-        viewExample.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 100).isActive = true
-        viewExample.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -400).isActive = true
+        viewHeaderDetails.translatesAutoresizingMaskIntoConstraints = false
         
-        viewExample.lblName.text = "Teste"
-        viewExample.lblRating.text = "2.3"
-        viewExample.lblDistance.text = "1.8 Km"
-        viewExample.lblOperation.text = "Funcionando"
+        viewHeaderDetails.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: 0).isActive = true
+        viewHeaderDetails.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 0).isActive = true
+        viewHeaderDetails.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 100).isActive = true
+        viewHeaderDetails.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -400).isActive = true
         
+        viewHeaderDetails.lblName.text = "Teste"
+        viewHeaderDetails.lblRating.text = "2.3"
+        viewHeaderDetails.lblDistance.text = "1.8 Km"
+        viewHeaderDetails.lblOperation.text = "Funcionando"
+        
+        //GeneralBoxDetails
+        let viewGeneralBox = GeneralBoxDetails()
+        view.addSubview(viewGeneralBox)
+        
+        viewGeneralBox.translatesAutoresizingMaskIntoConstraints = false
+        
+        viewGeneralBox.topAnchor.constraint(equalTo: viewHeaderDetails.topAnchor, constant: 100).isActive = true
+        viewGeneralBox.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 0).isActive = true
+        viewGeneralBox.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -0).isActive = true
+        viewGeneralBox.heightAnchor.constraint(equalToConstant: 400.0)
     }
 }
