@@ -14,8 +14,7 @@ extension HeaderDetails {
         lblName.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             lblName.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
-            lblName.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10),
-            lblName.widthAnchor.constraint(lessThanOrEqualToConstant: 334.0)
+            lblName.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10)
             ])
         
         lblOperation.translatesAutoresizingMaskIntoConstraints = false
@@ -36,7 +35,7 @@ extension HeaderDetails {
         NSLayoutConstraint.activate([
             imgRating.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
             imgRating.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -10),
-            imgRating.leftAnchor.constraint(equalTo: lblName.rightAnchor, constant: 2),
+            imgRating.leftAnchor.constraint(greaterThanOrEqualTo: lblName.rightAnchor, constant: 20),
             imgRating.widthAnchor.constraint(lessThanOrEqualToConstant: 42.0),
             imgRating.heightAnchor.constraint(lessThanOrEqualToConstant: 38.0)
             ])

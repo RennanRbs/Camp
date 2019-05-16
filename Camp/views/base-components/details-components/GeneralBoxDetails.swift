@@ -10,31 +10,28 @@ import Foundation
 import UIKit
 
 class GeneralBoxDetails: UIView {
-    private let generalString: String = "General"
-    private let contactString: String = "Contact"
-    private let adressString: String = "Address"
-    private let operationString: String = "Operation"
-    private let routeString: String = "Route"
-    private let rateString: String = "Rate"
+    private let strGeneral: String = "General"
+    private let strContact: String = "Contact"
+    private let strAdress: String = "Address"
+    private let strOperation: String = "Operation"
+    private let strRoute: String = "Route"
+    private let strRate: String = "Rate"
     
     internal lazy var lblGeneral: UILabel = {
         let label = UILabel()
-        FormattingCenter().subTitleGrayLeftFor(label, text: generalString)
+        FormattingCenter().subTitleGrayLeftFor(label, text: strGeneral)
         return label
     }()
     
     var viewBox: UIView = {
         var view = UIView()
-        view.backgroundColor = UIColor.init(named: "LightGray")
-        view.layer.borderColor = UIColor.init(named: "Green")?.cgColor
-        view.layer.borderWidth = 2.0
-        view.layer.cornerRadius = 5.0
+        FormattingCenter().viewBoxBackgroundLightGrayBorderGreenFor(view)
         return view
     }()
     
     internal lazy var lblContact: UILabel! = {
         var label = UILabel()
-        FormattingCenter().subTitleGrayLeftFor(label, text: contactString)
+        FormattingCenter().subTitleGrayLeftFor(label, text: strContact)
         return label
     }()
     
@@ -52,7 +49,7 @@ class GeneralBoxDetails: UIView {
     
     internal lazy var lblAddress: UILabel! = {
         var label = UILabel()
-        FormattingCenter().subTitleGrayLeftFor(label, text: adressString)
+        FormattingCenter().subTitleGrayLeftFor(label, text: strAdress)
         return label
     }()
     
@@ -64,7 +61,7 @@ class GeneralBoxDetails: UIView {
     
     internal lazy var lblOperation: UILabel! = {
         var label = UILabel()
-        FormattingCenter().subTitleGrayLeftFor(label, text: operationString)
+        FormattingCenter().subTitleGrayLeftFor(label, text: strOperation)
         return label
     }()
     
@@ -76,12 +73,7 @@ class GeneralBoxDetails: UIView {
     
     internal lazy var bntRoute: UIButton = {
         var button = UIButton()
-        button.backgroundColor = UIColor.init(named: "LightGray")
-        button.layer.borderColor = UIColor.init(named: "Orange")?.cgColor
-        button.layer.borderWidth = 2.0
-        button.layer.cornerRadius = 13.0
-        button.setTitle(routeString, for: .normal)
-        button.setTitleColor(UIColor.init(named: "Orange"), for: .normal)
+        FormattingCenter().buttonOrangeFor(button, text: strRoute)
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         button.tag = 1
         return button
@@ -89,12 +81,7 @@ class GeneralBoxDetails: UIView {
     
     internal lazy var bntRating: UIButton = {
         var button = UIButton()
-        button.backgroundColor = UIColor.init(named: "LightGray")
-        button.layer.borderColor = UIColor.init(named: "Orange")?.cgColor
-        button.layer.borderWidth = 2.0
-        button.layer.cornerRadius = 13.0
-        button.setTitle(rateString, for: .normal)
-        button.setTitleColor(UIColor.init(named: "Orange"), for: .normal)
+        FormattingCenter().buttonOrangeFor(button, text: strRate)
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         button.tag = 2
         return button
