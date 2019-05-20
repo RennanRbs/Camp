@@ -10,6 +10,6 @@ import Foundation
 import UIKit
 
 protocol CollectionViewImageListDelegate: AnyObject {
-    func numberOfItemsInSection(_ collection: UICollectionView) -> Int
-    func cellForItemAt(_ collection: UICollectionView, index: Int) -> UIImage
+    func numberOfItemsInSection(_ controller: UICollectionViewController) -> Int
+    func cellForItemAt(_ controller: UICollectionViewController, index: Int) -> UIImage
 }

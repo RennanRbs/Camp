@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D07CACB2292C83400AF54AC /* GeneralBoxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D07CACA2292C83400AF54AC /* GeneralBoxTableViewCell.swift */; };
+		4D07CACD2292C93100AF54AC /* GeneralBoxTableViewCell+Contraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D07CACC2292C93100AF54AC /* GeneralBoxTableViewCell+Contraints.swift */; };
+		4D07CACF2292CDE700AF54AC /* ImageCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D07CACE2292CDE700AF54AC /* ImageCollectionTableViewCell.swift */; };
+		4D07CAD32292E51200AF54AC /* HeaderDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D07CAD22292E51200AF54AC /* HeaderDetailsTableViewCell.swift */; };
+		4D07CAD52292E59E00AF54AC /* HeaderDetailsTableViewCell+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D07CAD42292E59E00AF54AC /* HeaderDetailsTableViewCell+Constraints.swift */; };
+		4D07CAD72292EB6700AF54AC /* CommentsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D07CAD62292EB6700AF54AC /* CommentsCollectionViewCell.swift */; };
+		4D07CAD92292EF2B00AF54AC /* ImageCollectionTableViewCell+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D07CAD82292EF2B00AF54AC /* ImageCollectionTableViewCell+Constraints.swift */; };
+		4D07CADB2292F08900AF54AC /* ImageCollectionTableViewCell+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D07CADA2292F08900AF54AC /* ImageCollectionTableViewCell+CollectionView.swift */; };
+		4D07CAE12292F27200AF54AC /* ImageCollectionViewCell+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D07CAE02292F27200AF54AC /* ImageCollectionViewCell+Constraints.swift */; };
 		4D70E705228D82C700CE6C31 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70E704228D82C700CE6C31 /* ImageCollectionViewCell.swift */; };
 		4D70E707228D8F6F00CE6C31 /* CollectionViewImageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70E706228D8F6F00CE6C31 /* CollectionViewImageListViewController.swift */; };
 		4D70E70B228DEADB00CE6C31 /* CollectionViewImageListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70E70A228DEADB00CE6C31 /* CollectionViewImageListDelegate.swift */; };
-		4D850AD8228B22B200A22965 /* GeneralBoxDetails+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D850AD7228B22B200A22965 /* GeneralBoxDetails+Constraints.swift */; };
-		4DE44DBD22899241009FF883 /* HeaderDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE44DBC22899241009FF883 /* HeaderDetails.swift */; };
 		4DE44DC222899EE3009FF883 /* FormattingCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE44DC122899EE3009FF883 /* FormattingCenter.swift */; };
 		4DE44DC72289AA18009FF883 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE44DC52289AA18009FF883 /* DetailsViewController.swift */; };
-		4DE44DCA228AE56E009FF883 /* HeaderDetails+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE44DC9228AE56E009FF883 /* HeaderDetails+Constraints.swift */; };
-		4DE44DCC228AE5F9009FF883 /* GeneralBoxDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE44DCB228AE5F9009FF883 /* GeneralBoxDetails.swift */; };
 		A3903177228593D900EAA8CE /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3903175228593D900EAA8CE /* CoreDataModel.xcdatamodeld */; };
 		A390317922859AA100EAA8CE /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390317822859AA100EAA8CE /* CoreDataManager.swift */; };
 		A390317E2287198D00EAA8CE /* Place+methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390317D2287198D00EAA8CE /* Place+methods.swift */; };
@@ -51,15 +56,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D07CACA2292C83400AF54AC /* GeneralBoxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralBoxTableViewCell.swift; sourceTree = "<group>"; };
+		4D07CACC2292C93100AF54AC /* GeneralBoxTableViewCell+Contraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeneralBoxTableViewCell+Contraints.swift"; sourceTree = "<group>"; };
+		4D07CACE2292CDE700AF54AC /* ImageCollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionTableViewCell.swift; sourceTree = "<group>"; };
+		4D07CAD22292E51200AF54AC /* HeaderDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		4D07CAD42292E59E00AF54AC /* HeaderDetailsTableViewCell+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HeaderDetailsTableViewCell+Constraints.swift"; sourceTree = "<group>"; };
+		4D07CAD62292EB6700AF54AC /* CommentsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsCollectionViewCell.swift; sourceTree = "<group>"; };
+		4D07CAD82292EF2B00AF54AC /* ImageCollectionTableViewCell+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageCollectionTableViewCell+Constraints.swift"; sourceTree = "<group>"; };
+		4D07CADA2292F08900AF54AC /* ImageCollectionTableViewCell+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageCollectionTableViewCell+CollectionView.swift"; sourceTree = "<group>"; };
+		4D07CAE02292F27200AF54AC /* ImageCollectionViewCell+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageCollectionViewCell+Constraints.swift"; sourceTree = "<group>"; };
 		4D70E704228D82C700CE6C31 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		4D70E706228D8F6F00CE6C31 /* CollectionViewImageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewImageListViewController.swift; sourceTree = "<group>"; };
 		4D70E70A228DEADB00CE6C31 /* CollectionViewImageListDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewImageListDelegate.swift; sourceTree = "<group>"; };
-		4D850AD7228B22B200A22965 /* GeneralBoxDetails+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeneralBoxDetails+Constraints.swift"; sourceTree = "<group>"; };
-		4DE44DBC22899241009FF883 /* HeaderDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderDetails.swift; sourceTree = "<group>"; };
 		4DE44DC122899EE3009FF883 /* FormattingCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FormattingCenter.swift; path = "Camp/views/base-components/FormattingCenter.swift"; sourceTree = SOURCE_ROOT; };
 		4DE44DC52289AA18009FF883 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
-		4DE44DC9228AE56E009FF883 /* HeaderDetails+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HeaderDetails+Constraints.swift"; sourceTree = "<group>"; };
-		4DE44DCB228AE5F9009FF883 /* GeneralBoxDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralBoxDetails.swift; sourceTree = "<group>"; };
 		A3903176228593D900EAA8CE /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		A390317822859AA100EAA8CE /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		A390317D2287198D00EAA8CE /* Place+methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Place+methods.swift"; sourceTree = "<group>"; };
@@ -108,14 +118,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D07CADC2292F11400AF54AC /* Image Collection Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4D07CACE2292CDE700AF54AC /* ImageCollectionTableViewCell.swift */,
+				4D07CAD82292EF2B00AF54AC /* ImageCollectionTableViewCell+Constraints.swift */,
+				4D07CADA2292F08900AF54AC /* ImageCollectionTableViewCell+CollectionView.swift */,
+				4D70E704228D82C700CE6C31 /* ImageCollectionViewCell.swift */,
+				4D07CAE02292F27200AF54AC /* ImageCollectionViewCell+Constraints.swift */,
+			);
+			path = "Image Collection Cell";
+			sourceTree = "<group>";
+		};
+		4D07CADD2292F18B00AF54AC /* General Box Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4D07CACA2292C83400AF54AC /* GeneralBoxTableViewCell.swift */,
+				4D07CACC2292C93100AF54AC /* GeneralBoxTableViewCell+Contraints.swift */,
+			);
+			path = "General Box Cell";
+			sourceTree = "<group>";
+		};
+		4D07CADE2292F1A300AF54AC /* Header Details Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4D07CAD22292E51200AF54AC /* HeaderDetailsTableViewCell.swift */,
+				4D07CAD42292E59E00AF54AC /* HeaderDetailsTableViewCell+Constraints.swift */,
+			);
+			path = "Header Details Cell";
+			sourceTree = "<group>";
+		};
+		4D07CADF2292F1B600AF54AC /* Comments Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4D07CAD62292EB6700AF54AC /* CommentsCollectionViewCell.swift */,
+			);
+			path = "Comments Cell";
+			sourceTree = "<group>";
+		};
 		4D850AD9228B243C00A22965 /* details-components */ = {
 			isa = PBXGroup;
 			children = (
-				4DE44DBC22899241009FF883 /* HeaderDetails.swift */,
-				4DE44DC9228AE56E009FF883 /* HeaderDetails+Constraints.swift */,
-				4DE44DCB228AE5F9009FF883 /* GeneralBoxDetails.swift */,
-				4D850AD7228B22B200A22965 /* GeneralBoxDetails+Constraints.swift */,
-				4D70E704228D82C700CE6C31 /* ImageCollectionViewCell.swift */,
+				4D07CADF2292F1B600AF54AC /* Comments Cell */,
+				4D07CADE2292F1A300AF54AC /* Header Details Cell */,
+				4D07CADD2292F18B00AF54AC /* General Box Cell */,
+				4D07CADC2292F11400AF54AC /* Image Collection Cell */,
 				4D70E706228D8F6F00CE6C31 /* CollectionViewImageListViewController.swift */,
 				4D70E70A228DEADB00CE6C31 /* CollectionViewImageListDelegate.swift */,
 			);
@@ -450,22 +497,27 @@
 			files = (
 				4D70E707228D8F6F00CE6C31 /* CollectionViewImageListViewController.swift in Sources */,
 				4D70E705228D82C700CE6C31 /* ImageCollectionViewCell.swift in Sources */,
+				4D07CACB2292C83400AF54AC /* GeneralBoxTableViewCell.swift in Sources */,
 				A390317E2287198D00EAA8CE /* Place+methods.swift in Sources */,
+				4D07CAD52292E59E00AF54AC /* HeaderDetailsTableViewCell+Constraints.swift in Sources */,
 				A39031822287593900EAA8CE /* AddPlaceViewController.swift in Sources */,
 				A3999D7B22845AC00024FFC7 /* ProfileViewController.swift in Sources */,
 				A3999D772284599E0024FFC7 /* ReportViewController.swift in Sources */,
 				A3999D79228459DE0024FFC7 /* RatingViewController.swift in Sources */,
-				4DE44DCA228AE56E009FF883 /* HeaderDetails+Constraints.swift in Sources */,
+				4D07CAD32292E51200AF54AC /* HeaderDetailsTableViewCell.swift in Sources */,
+				4D07CACD2292C93100AF54AC /* GeneralBoxTableViewCell+Contraints.swift in Sources */,
 				4D70E70B228DEADB00CE6C31 /* CollectionViewImageListDelegate.swift in Sources */,
+				4D07CAD72292EB6700AF54AC /* CommentsCollectionViewCell.swift in Sources */,
 				4DE44DC72289AA18009FF883 /* DetailsViewController.swift in Sources */,
 				A390318022871BB700EAA8CE /* NSManagedObject+DataAccessMethods.swift in Sources */,
 				A3999D732284521B0024FFC7 /* MapViewController.swift in Sources */,
-				4DE44DBD22899241009FF883 /* HeaderDetails.swift in Sources */,
+				4D07CACF2292CDE700AF54AC /* ImageCollectionTableViewCell.swift in Sources */,
+				4D07CAE12292F27200AF54AC /* ImageCollectionViewCell+Constraints.swift in Sources */,
 				4DE44DC222899EE3009FF883 /* FormattingCenter.swift in Sources */,
+				4D07CADB2292F08900AF54AC /* ImageCollectionTableViewCell+CollectionView.swift in Sources */,
+				4D07CAD92292EF2B00AF54AC /* ImageCollectionTableViewCell+Constraints.swift in Sources */,
 				E8B8D08E22772F2600E3DA59 /* AppDelegate.swift in Sources */,
-				4DE44DCC228AE5F9009FF883 /* GeneralBoxDetails.swift in Sources */,
 				A3903177228593D900EAA8CE /* CoreDataModel.xcdatamodeld in Sources */,
-				4D850AD8228B22B200A22965 /* GeneralBoxDetails+Constraints.swift in Sources */,
 				A390317922859AA100EAA8CE /* CoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
