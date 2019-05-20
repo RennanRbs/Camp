@@ -11,6 +11,8 @@ class TimeLineView: UIView, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var timelineView: TimeLineView!
     @IBOutlet weak var timeLine_TableView: UITableView!
     
+    let example: [String] = ["Horse", "Cow", "Camel", "Sheep", "Goat"]
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -26,9 +28,20 @@ class TimeLineView: UIView, UITableViewDelegate, UITableViewDataSource {
         timelineView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         timeLine_TableView.register(UINib(nibName: "TimeLineTableViewCell", bundle: nil), forCellReuseIdentifier: "TimeLineTableViewCell")
     }
-    
+        
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 1
+    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return example.count
+    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 5
+    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+        headerView.backgroundColor = UIColor.clear
+        return headerView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -38,6 +51,8 @@ class TimeLineView: UIView, UITableViewDelegate, UITableViewDataSource {
         let myColor : UIColor = UIColor( red: 26/255, green: 188/255, blue:156/255, alpha: 1.0 )
         cell?.layer.borderColor = myColor.cgColor
         cell!.layer.cornerRadius = 10
+        cell?.clipsToBounds = true
+        cell?.notification_label.text = example[indexPath.section]
         return cell!
     }
 }

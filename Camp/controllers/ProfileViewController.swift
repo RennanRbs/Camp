@@ -14,6 +14,7 @@ class ProfileViewController: UIViewController {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
+    
     let imageViewTimeLine: TimeLineView = {
         let imageView = TimeLineView(frame: CGRect.zero)
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -35,6 +36,5 @@ class ProfileViewController: UIViewController {
         imageViewTimeLine.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         imageViewTimeLine.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         imageViewTimeLine.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        
     }
 }
