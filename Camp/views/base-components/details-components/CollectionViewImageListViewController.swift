@@ -32,8 +32,6 @@ class CollectionViewImageListViewController: UICollectionViewController {
         layout.scrollDirection = .horizontal
         super.init(collectionViewLayout: layout)
         self.collectionView.contentInset = UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 0)
-
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -41,7 +39,7 @@ class CollectionViewImageListViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if let number = delegate?.numberOfItemsInSection(collectionView) {
+        if let number = delegate?.numberOfItemsInSection(self) {
             return number
         } else {
             return 0
@@ -51,7 +49,7 @@ class CollectionViewImageListViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
         if let cell = cell as? ImageCollectionViewCell {
-            cell.imgCell = delegate?.cellForItemAt(collectionView, index: indexPath.row)
+            cell.imgCell = delegate?.cellForItemAt(self, index: indexPath.row)
             return cell
         }
         return cell
