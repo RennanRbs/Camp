@@ -18,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let mapViewController = DetailsViewController()
         let profileViewController = ProfileViewController()
-        return UINavigationController(rootViewController: profileViewController)
+        let ratingViewController = ReportViewController()
+        return UINavigationController(rootViewController: ratingViewController)
     }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
