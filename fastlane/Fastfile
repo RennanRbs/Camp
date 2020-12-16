@@ -1,0 +1,48 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Execute tests"
+  lane :tests do
+    begin
+      build_n_test()
+      slack_success_msg()    
+    rescue => exception
+      slack_error_msg(exception)
+    end
+  end
+end
+
+def build_n_test
+  scan(scheme: "Camp", configuration: "Debug")
+end
+
+def slack_success_msg
+  slack(
+    message: "✅ Your app passed in all tests!",
+    success: true,
+    slack_url: "https://hooks.slack.com/services/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",     
+  )
+end
+
+def slack_error_msg(exception)
+  slack(
+    message: "❌ Lane failed with exception: #{exception}",
+    success: false,
+    slack_url: "https://hooks.slack.com/services/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",          
+  )
+end
